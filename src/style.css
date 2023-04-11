@@ -1,11 +1,84 @@
-html ,
+html,
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width:100%;
-    overflow-x: hidden;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: brown;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.score {
+  display: flex;
+  width: 95%;
+  padding: 10px;
+}
+
+.recent-score {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  flex: 0 50%;
+  border: 1px solid black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  top: 0;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid black;
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+  flex: 0 50%;
+  border: 1px solid black;
+}
+
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: #202020;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(209, 209, 209);
 }
