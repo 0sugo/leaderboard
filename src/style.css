@@ -8,49 +8,32 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
-
-h1 {
-  font-size: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
+/* main section */
 .score {
   display: flex;
+  justify-content: center;
   width: 95%;
   padding: 10px;
 }
-
+/* Recent scores */
 .recent-score {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
+  align-items: center;
   flex: 0 50%;
   border: 1px solid black;
+  background-color: #f2f2f2;
+  padding: 10px 0px;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
 }
-
-form {
+.recent-top{
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 10px;
-  position: relative;
-  top: 0;
-}
-
-form input {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid black;
 }
 
 .add-score {
@@ -74,11 +57,53 @@ button {
 }
 
 table {
-  border: 1px solid black;
+  border: 1px solid rgb(145, 140, 140);
   width: 100%;
   border-collapse: collapse;
 }
 
+tr{
+  height: 38px;
+}
+
 tr:nth-child(odd) {
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(224, 224, 224);
+}
+
+.holder{
+  width: 80%;
+}
+
+/* Add scores */
+.add-score{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 50%;
+  border: 1px solid black;
+}
+
+#main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  top: 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid black;
+}
+/* footer */
+footer{
+  text-align: center;
+}
+footer span{
+  color:#e25555;
+  font-size: 24px;
 }
