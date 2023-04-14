@@ -8,12 +8,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
-h1{
+
+h1 {
   text-align: center;
   font-size: 2.5rem;
   color: #2e424d;
   letter-spacing: 0.03em;
 }
+
+
 
 /* main section */
 .score {
@@ -23,6 +26,7 @@ h1{
   padding: 10px;
   gap: 10px;
 }
+
 /* Recent scores */
 .recent-score {
   display: flex;
@@ -31,21 +35,21 @@ h1{
   flex: 0 50%;
   border: 1px solid black;
   background-color: #f2f2f2;
-  padding: 10px 0px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px 0;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
   border-radius: 5%;
   -webkit-border-radius: 5%;
   -moz-border-radius: 5%;
   -ms-border-radius: 5%;
   -o-border-radius: 5%;
 }
-.recent-top{
+
+.recent-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 80%;
 }
-
 
 table {
   border: 3px solid #5b8291;
@@ -53,7 +57,7 @@ table {
   border-collapse: collapse;
 }
 
-tr{
+tr {
   height: 38px;
 }
 
@@ -61,11 +65,12 @@ tr:nth-child(odd) {
   background-color: rgb(224, 224, 224);
 }
 
-.holder{
+.holder {
   width: 80%;
 }
-.retriever{
-  background-color: #5b8291; 
+
+.retriever {
+  background-color: #5b8291;
   border: none;
   color: #202020;
   padding: 5px 10px;
@@ -82,16 +87,17 @@ tr:nth-child(odd) {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
+
 /* Add scores */
-.add-score{
+.add-score {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 0 50%;
   border: 1px solid black;
   background-color: #f2f2f2;
-  padding: 10px 0px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px 0;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
   border-radius: 5%;
   -webkit-border-radius: 5%;
   -moz-border-radius: 5%;
@@ -111,7 +117,7 @@ tr:nth-child(odd) {
 input {
   width: 80%;
   padding: 10px;
-  margin: 5px 0px;
+  margin: 5px 0;
   border: 1px solid #5b8291;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -119,11 +125,13 @@ input {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
 }
+
 input:focus {
   outline: none;
   border: 2px solid #98dad9;
 }
-.submit{
+
+.submit {
   background-color: #5b8291;
   border: none;
   color: #202020;
@@ -141,11 +149,13 @@ input:focus {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
 /* footer */
-footer{
+footer {
   text-align: center;
 }
-footer span{
-  color:#e25555;
+
+footer span {
+  color: #e25555;
   font-size: 28px;
 }
