@@ -1,5 +1,5 @@
 import './style.css';
-import Leaderbord from './modules/Leaderboard';
+import Leaderbord from './modules/Leaderboard.js';
 // post.js
 const updater = document.querySelector('.submit');
 updater.addEventListener('click', (event) => {
