@@ -8,6 +8,7 @@ class Individuals {
 }
 
 export async function generate() {
+  let count = 0;
 
   let playerName = document.querySelector('#name').value;
   let playerScore = document.querySelector('#score').value;
@@ -15,31 +16,38 @@ export async function generate() {
     user: playerName,
     score: playerScore,
   };
-  if(playerName !== '' && playerScore !== ''){
+  if(playerName !== '' && playerScore !== '') {
+    try {
+      const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/CWT65Uvksmi7lz5xE7FP/scores/', {
+        method: 'POST',
+        body: JSON.stringify(info),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      });
+      
+      const data = await response.json();
+      console.log(data);
+      
+      document.querySelector('#name').value = '';
+      document.querySelector('#score').value = '';
+      count += 1;
 
-    
-    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/CWT65Uvksmi7lz5xE7FP/scores/', {
-      method: 'POST',
-      body: JSON.stringify(info),
+
+      const apiEndPoint = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/CWT65Uvksmi7lz5xE7FP/scores/'
+    const responsed = await fetch(apiEndPoint, {
+      method: 'GET',
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-      
     }).then((response) => response.json())
-    // res.console.log(res))
-  }
-  playerName= '';
-  playerScore = '';
-}
-  
-const submit = document.querySelector('.submit');
-submit.addEventListener('click', (event) => {
-  event.preventDefault();
-  // const playerName = document.querySelector('#name').value;
-  // const playerScore = document.querySelector('#score').value;
- 
-  // player = new Individuals(playerName, playerScore);
-  // console.log(typeof (playerScore));
-  generate();
+      .then((data) => console.log(data))
+      .then(() => console.log("count", count));
 
-});
+
+      
+    } catch (error) {
+      console.error(error);
+    }
+  }}
+  
