@@ -1,4 +1,3 @@
-
 import './style.css';
 import Leaderbord from './modules/Leaderboard';
 // post.js
