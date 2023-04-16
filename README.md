@@ -85,7 +85,7 @@ To get a local copy up and running follow these simple example steps:
 ```
 git clone  <https://github.com/0sugo/leaderboard.git>
 ```
-- run ```cd Leaderboard``` to enter the project folder
+- run ```cd leaderboard``` to enter the project folder
 - run ```npm i``` to install all dependencies
 - run ```npm run build``` to bundle the project with webpack, and
 - run ```npm start``` to launch the application
@@ -103,8 +103,8 @@ git clone  <https://github.com/0sugo/leaderboard.git>
 ## 🔭 Future Features <a name="future-features"></a>
 The following are underway features that will be added to the project in the near future.
 
-- [ ] **[send and receive data from API]**
-- [ ] **[final touches]**
+- [ ] **[Additional features, such as filtering or sorting the leaderboard listI]**
+- [ ] **[Integration with other APIs or databases]**
 
 <!-- CONTRIBUTING -->
 
