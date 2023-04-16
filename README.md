@@ -105,6 +105,7 @@ The following are underway features that will be added to the project in the nea
 
 - [ ] **[Additional features, such as filtering or sorting the leaderboard listI]**
 - [ ] **[Integration with other APIs or databases]**
+- [ ] **[Improved styling and user interface design]**
 
 <!-- CONTRIBUTING -->
 
